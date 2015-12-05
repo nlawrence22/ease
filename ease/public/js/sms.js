@@ -1,4 +1,5 @@
 
+
 function isIosDevice() {
     var agent = navigator.userAgent.toLowerCase();
     return !!(agent.indexOf("iphone") > -1 || agent.indexOf("ipad") > -1);
