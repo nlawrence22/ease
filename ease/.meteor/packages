@@ -21,3 +21,6 @@ insecure                # Allow all DB writes from clients (for prototyping)
 accounts-twitter
 accounts-password
 accounts-ui
+materialize:materialize
+useraccounts:materialize
+gildaspk:autoform-materialize
