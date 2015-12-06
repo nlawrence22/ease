@@ -1,1 +1,10 @@
 /* CSS declarations go here */
+
+.row {
+    margin-bottom: 800px !important;    /* padding for individual elements */
+    height: 100% !important;
+}
+
+.card-action {
+    text-align: center;
+}
