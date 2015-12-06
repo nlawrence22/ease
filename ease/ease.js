@@ -2,7 +2,6 @@ if (Meteor.isClient) {
 
   Template.easecheckin.events({
     'submit .feelings': function(event){
-
       event.preventDefault();
 
       var physicalv = event.target.physical.value;
