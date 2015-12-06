@@ -8,3 +8,8 @@
 .card-action {
     text-align: center;
 }
+
+h1 {
+    font-size: 2em;
+    margin:.5em;
+}
