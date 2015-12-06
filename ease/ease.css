@@ -13,3 +13,19 @@ h1 {
     font-size: 2em;
     margin:.5em;
 }
+
+.lo {
+    background-color:#4a4c61;
+    color: #ffcd8e !important;
+}
+
+.ro {
+     background-color:#ffcd8e;
+     color:#4a4c61 !important;
+}
+
+.card {
+    background-color: #c2e1e6;
+    font-size: 2em;
+    margin:.5em;
+}
