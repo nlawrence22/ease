@@ -7,19 +7,25 @@ if (Meteor.isClient) {
     'submit .feelings': function(event){
       event.preventDefault();
 
-      var physicalv = event.target.physical.value;
-      var emotionalv = event.target.emotional.value;
+      var physically = event.target.physical.value;
+      var emotionally = event.target.emotional.value;
 
       console.log("Form submitted");
-      console.log(physicalv);
-      console.log(emotionalv);
+      console.log(physically);
+      console.log(emotionally);
       CheckinLog.insert({
-        physical: physicalv,
-        emotional: emotionalv,
+        physical: physically,
+        emotional: emotionally,
         createdAt: new Date(),            // current time
         owner: Meteor.userId(),           // _id of logged in user
-        username: Meteor.user().username  // username of logged in user
+        //username: Meteor.user().username  // username of logged in user
       });
+
+      if (physically > 6 || emotionally > 6){
+          window.location = "ease.html#needhelp";
+      } else {
+          window.location = "#practice";
+      }
     }
   });
 
