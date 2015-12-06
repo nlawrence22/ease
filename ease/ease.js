@@ -2,7 +2,7 @@ if (Meteor.isClient) {
   // counter starts at 0
   Session.setDefault('counter', 0);
 
-  Template.hello.helpers({
+  /*Template.hello.helpers({
     counter: function () {
       return Session.get('counter');
     }
@@ -13,6 +13,23 @@ if (Meteor.isClient) {
       // increment the counter when button is clicked
       Session.set('counter', Session.get('counter') + 1);
     }
+  });*/
+
+  Template.easecheckin.events({
+      'submit .feelings': function (event) {
+
+          event.preventDefault();
+
+          //Check values of sliders
+          var physical = event.target.physical.value;
+          var emotional = event.target.emotional.value;
+
+          console.log(physical);
+          console.log(emotional);
+
+          //Log values to DB
+          //TODO: Add db code
+      }
   });
 }
 
