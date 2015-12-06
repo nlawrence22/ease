@@ -5,6 +5,10 @@
     height: 100% !important;
 }
 
+.card {
+    padding: 10px;
+}
+
 .card-action {
     text-align: center;
 }
